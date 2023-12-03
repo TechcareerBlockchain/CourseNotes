@@ -14,7 +14,7 @@ func NewRouter() (router *gin.Engine) {
 	router.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"*"},
 		AllowMethods:     []string{"PUT", "PATCH", "GET", "DELETE", "POST", "OPTIONS"},
-		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
+		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization", "walletAddress"},
 		ExposeHeaders:    []string{"Content-Length"},
 		AllowCredentials: true,
 		MaxAge:           12 * time.Hour,
@@ -23,6 +23,7 @@ func NewRouter() (router *gin.Engine) {
 	//TODO authentication
 	router.Use(middleware.WalletAuthMiddleware())
 
+	//must be here to use cookies - session
 	gob.Register(map[string]interface{}{})
 	return router
 }

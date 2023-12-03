@@ -22,6 +22,12 @@ const CustomNavbar = () => { //Arrow function
                             <Link href="/pools" className="block py-4 px-3 my-auto text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Pools</Link>
                         </li>
                         <li>
+                            <Link href="/price/offchain" className="block py-4 px-3 my-auto text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Offchain Price</Link>
+                        </li>
+                        <li>
+                            <Link href="/price/onchain" className="block py-4 px-3 my-auto text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">OnChain Price</Link>
+                        </li>
+                        <li>
                             <Web3Button />
                         </li>
                     </ul>

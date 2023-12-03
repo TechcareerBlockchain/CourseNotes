@@ -26,6 +26,7 @@ func GetBalanceHandler() gin.HandlerFunc {
 			c.JSON(http.StatusInternalServerError, map[string]interface{}{"status": false, "data": err})
 			return
 		}
+		//c.Request.Header.Get("walletAddress") - c.GetHeader("walletAddress")
 		fmt.Println(balance)
 		c.JSON(http.StatusOK, map[string]interface{}{"status": true, "data": balance})
 	}
