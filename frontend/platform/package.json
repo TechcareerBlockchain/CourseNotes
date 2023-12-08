@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ethersproject/providers": "^5.7.2",
+    "@pushprotocol/restapi": "^1.4.45",
+    "@uniswap/widgets": "^2.59.0",
+    "@web3-react/core": "^8.2.3",
     "@web3modal/ethereum": "2.4.1",
     "@web3modal/react": "2.4.1",
     "@worldcoin/idkit": "^1.0.0-alpha.5",
@@ -18,7 +22,8 @@
     "react-dom": "^18.2.0",
     "redstone-api": "^0.4.11",
     "viem": "~0.3.36",
-    "wagmi": "^1.0.6"
+    "wagmi": "^1.0.6",
+    "web3": "^4.3.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.31",

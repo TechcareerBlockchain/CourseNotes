@@ -31,6 +31,12 @@ const CustomNavbar = () => { //Arrow function
                             <Link href="/login" className="block py-4 px-3 my-auto text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Login via WorldCoin</Link>
                         </li>
                         <li>
+                            <Link href="/uniswap" className="block py-4 px-3 my-auto text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Uniswap Widget</Link>
+                        </li>
+                        <li>
+                            <Link href="/connect/metamask" className="block py-4 px-3 my-auto text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Connect Metamask Wallet</Link>
+                        </li>
+                        <li>
                             <Web3Button />
                         </li>
                     </ul>
