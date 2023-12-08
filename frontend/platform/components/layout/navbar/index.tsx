@@ -28,6 +28,9 @@ const CustomNavbar = () => { //Arrow function
                             <Link href="/price/onchain" className="block py-4 px-3 my-auto text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">OnChain Price</Link>
                         </li>
                         <li>
+                            <Link href="/login" className="block py-4 px-3 my-auto text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Login via WorldCoin</Link>
+                        </li>
+                        <li>
                             <Web3Button />
                         </li>
                     </ul>
