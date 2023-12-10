@@ -27,4 +27,9 @@ contract Market {
         return products;
     }
 
+
+    //TODO - HOMEWORK add buy function and a require function. Seller cannot use buyer function for his/her products
+    //TODO - HOMEWORK this function should create an escrow contract and return the address. 
+    //TODO - HOMEWORK sign function should be called from UI (frontend application)
+
 }
